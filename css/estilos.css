@@ -1,0 +1,80 @@
+*{ /*obligatorio es un reseteo del margin y padding del navegador y no tener problemas con ellos*/
+	margin:0;
+	padding:0;
+}
+
+body{ /*usar esta configuracion de css para el body*/
+	background:#fff;
+	background-image: url(../imagenes/fondo.jpg);
+	background-repeat: no-repeat; /*para que la imagen no se repita en el fondo*/
+	background-attachment: fixed; /* esta y la que sige es para evitar que se queden espacios en blanco*/
+	background-size: cover;
+}
+
+header, .principal, footer{ /*se declara el tamano que se quiere de ancho con el width=ancho, margin=ancho  */
+	width:100%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header nav { /*con el background se deside el color de fondo del nav que es el que contiene el menu, con el overflow:hidden se 
+				el nev con sus modificaciones de color */
+	background:#17c1fa;
+	overflow: hidden;
+}
+
+header nav ul{ /*le quita los puntos de lista para que solo se vea las palabras del menu*/
+	list-style: none;
+}
+
+header nav ul li{/*alinea el listado del menu de forma horisontal para que no se vea feo*/
+	float: left;
+}
+
+header nav ul li a{
+	padding: 10px 20px;/*le de el tamano al display*/
+	display: block; /*crea in bloque que le da mayor espacio a las letras para que se vean*/
+	color: #fff; /*color de las letras*/
+	text-decoration: none;/*le quita el subrallado a las palabras ya que son link y asi se ven como palabras*/
+}
+
+header nav ul li a:hover { /*se usa para que cuando se seleccione una de las casillas del menu cambie de color*/
+	background: #f6251e;
+}
+
+.principal .articulo {
+	width: 68.5%; /*da el ancho de las clase mencionada*/
+	margin-right:1.5%; /*preguntar esta y la siguente a la profe*/
+	float: left;
+}
+
+.principal .articulo article {
+	padding: 20px; /*relleno antes del titulo y despuesd de la imagen*/
+	background:#c3f1fc;/*color del articulo*/
+	margin-bottom: 20px;
+}
+
+.img-imperactiva, .img-declarativa{
+	max-width: 256px;
+	max-height: 256px;
+}
+
+h1{/*el tipo del letra*/
+	font-family: 'Oswald', sans-serif;
+}
+
+h2, h3{
+	font-family: 'Mukta', sans-serif;
+}
+
+h4{
+	font-family: 'Libre Baskerville', serif;
+}
+
+footer{
+	background:#17c1fa;/*color del footer siempre colcar el mismp colocar que el del menu*/
+	color:#fff;
+	clear: both;/*para 	que se vea el footer*/
+	padding: 10px 0px;
+	text-align: center; /*para colocar el texto en el centro*/
+}
